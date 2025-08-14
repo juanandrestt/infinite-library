@@ -1,0 +1,77 @@
+{
+	"gabriel_garcia_marquez": {
+		"name": "Gabriel García Márquez",
+		"description": "Colombian novelist, Nobel Prize winner, magical realism pioneer. Major works include One Hundred Years of Solitude, Love in the Time of Cholera. Themes: solitude, time, memory, Latin American identity, cyclical history, magical realism techniques.",
+		"genres": ["magical realism", "literary fiction"],
+		"nationality": "Colombian",
+		"major_works": [
+			"One Hundred Years of Solitude",
+			"Love in the Time of Cholera"
+		],
+		"themes": ["solitude", "time", "memory", "family sagas"]
+	},
+	"clarice_lispector": {
+		"name": "Clarice Lispector",
+		"description": "Brazilian novelist, modernist, existentialist. Known for introspective prose and exploration of the self. Major works include The Hour of the Star, The Passion According to G.H. Themes: identity, existence, the inner self.",
+		"genres": ["modernism", "existentialism"],
+		"nationality": "Brazilian",
+		"major_works": ["The Hour of the Star", "The Passion According to G.H."],
+		"themes": ["identity", "existence", "the inner self"]
+	},
+	"edouard_glissant": {
+		"name": "Édouard Glissant",
+		"description": "Martinican poet, novelist, and essayist. Major works include The Poetics of Relation, and The Overcoming of History. Themes: identity, history, and the Caribbean experience.",
+		"genres": ["postcolonialism", "magical realism"],
+		"nationality": "Martinican",
+		"major_works": ["The Poetics of Relation", "The Fourth Century"],
+		"themes": ["identity", "history", "the Caribbean experience", "colonialism"]
+	},
+	"alejandra_pizarnik": {
+		"name": "Alejandra Pizarnik",
+		"description": "Argentinian poet and writer known for her intense and lyrical poetry. Major works include Works and Nights and Extracting the Stone of Madness. Themes: solitude, existentialism, the search for identity.",
+		"genres": ["poetry", "existentialism"],
+		"nationality": "Argentinian",
+		"major_works": ["Works and Nights", "Extracting the Stone of Madness"],
+		"themes": ["solitude", "existentialism", "identity"]
+	},
+	"jorge_luis_borges": {
+		"name": "Jorge Luis Borges",
+		"description": "Argentinian writer, poet, and essayist. Known for his intricate short stories and philosophical themes. Major works include Ficciones, Labyrinths, and The Aleph. Themes: infinity, labyrinths, identity, reality.",
+		"genres": ["fantasy", "philosophical fiction"],
+		"nationality": "Argentinian",
+		"major_works": ["Ficciones", "Labyrinths", "The Aleph"],
+		"themes": ["infinity", "labyrinths", "identity", "reality"]
+	},
+	"anne_carson": {
+		"name": "Anne Carson",
+		"description": "Canadian poet, essayist, and translator. Known for her innovative and genre-defying works. Major works include Autobiography of Red and The Beauty of the Husband. Themes: love, loss, mythology, the nature of art.",
+		"genres": ["poetry", "essay"],
+		"nationality": "Canadian",
+		"major_works": ["Autobiography of Red", "The Beauty of the Husband"],
+		"themes": ["love", "loss", "mythology", "the nature of art"]
+	},
+	"roberto_bolano": {
+		"name": "Roberto Bolaño",
+		"description": "Chilean novelist, poet, and essayist. Known for his complex narratives and exploration of the human condition. Major works include The Savage Detectives and 2666. Themes: violence, memory, the search for meaning.",
+		"genres": ["novel", "poetry"],
+		"nationality": "Chilean",
+		"major_works": ["The Savage Detectives", "2666"],
+		"themes": ["violence", "memory", "poetry"]
+	},
+	"maryse_conde": {
+		"name": "Maryse Condé",
+		"description": "Guadeloupean author known for her novels and essays exploring the complexities of Caribbean identity and history. Major works include Windward Heights and The Story of the Cannibal Woman. Themes: identity, colonialism, feminism.",
+		"genres": ["postcolonialism", "feminism"],
+		"nationality": "Guadeloupean",
+		"major_works": ["Windward Heights", "The Story of the Cannibal Woman"],
+		"themes": ["identity", "colonialism", "feminism"]
+	},
+	"marcel_shwob": {
+		"name": "Marcel Schwob",
+		"description": "French symbolist writer known for his short stories and innovative narrative techniques. Major works include The Book of Monelle and Imaginary Lives. Themes: identity, transformation, the uncanny.",
+		"genres": ["symbolism", "fantasy"],
+		"nationality": "French",
+		"major_works": ["The Book of Monelle", "Imaginary Lives"],
+		"themes": ["identity", "transformation", "the uncanny"]
+	}
+}
