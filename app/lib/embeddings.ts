@@ -5,7 +5,7 @@ const hf = new InferenceClient(process.env.HF_ACCESS_TOKEN);
 export async function getEmbedding(text: string) {
 	try {
 		const response = await hf.featureExtraction({
-			model: "sentence-transformers/all-MiniLM-L6-v2",
+			model: "BAAI/bge-m3",
 			inputs: text,
 		});
 		return response as number[];

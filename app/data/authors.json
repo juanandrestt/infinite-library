@@ -4,10 +4,6 @@
 		"description": "Colombian novelist, Nobel Prize winner, magical realism pioneer. Major works include One Hundred Years of Solitude, Love in the Time of Cholera. Themes: solitude, time, memory, Latin American identity, cyclical history, magical realism techniques.",
 		"genres": ["magical realism", "literary fiction"],
 		"nationality": "Colombian",
-		"major_works": [
-			"One Hundred Years of Solitude",
-			"Love in the Time of Cholera"
-		],
 		"themes": ["solitude", "time", "memory", "family sagas"]
 	},
 	"clarice_lispector": {
@@ -15,7 +11,6 @@
 		"description": "Brazilian novelist, modernist, existentialist. Known for introspective prose and exploration of the self. Major works include The Hour of the Star, The Passion According to G.H. Themes: identity, existence, the inner self.",
 		"genres": ["modernism", "existentialism"],
 		"nationality": "Brazilian",
-		"major_works": ["The Hour of the Star", "The Passion According to G.H."],
 		"themes": ["identity", "existence", "the inner self"]
 	},
 	"edouard_glissant": {
@@ -23,7 +18,6 @@
 		"description": "Martinican poet, novelist, and essayist. Major works include The Poetics of Relation, and The Overcoming of History. Themes: identity, history, and the Caribbean experience.",
 		"genres": ["postcolonialism", "magical realism"],
 		"nationality": "Martinican",
-		"major_works": ["The Poetics of Relation", "The Fourth Century"],
 		"themes": ["identity", "history", "the Caribbean experience", "colonialism"]
 	},
 	"alejandra_pizarnik": {
@@ -31,7 +25,6 @@
 		"description": "Argentinian poet and writer known for her intense and lyrical poetry. Major works include Works and Nights and Extracting the Stone of Madness. Themes: solitude, existentialism, the search for identity.",
 		"genres": ["poetry", "existentialism"],
 		"nationality": "Argentinian",
-		"major_works": ["Works and Nights", "Extracting the Stone of Madness"],
 		"themes": ["solitude", "existentialism", "identity"]
 	},
 	"jorge_luis_borges": {
@@ -39,7 +32,6 @@
 		"description": "Argentinian writer, poet, and essayist. Known for his intricate short stories and philosophical themes. Major works include Ficciones, Labyrinths, and The Aleph. Themes: infinity, labyrinths, identity, reality.",
 		"genres": ["fantasy", "philosophical fiction"],
 		"nationality": "Argentinian",
-		"major_works": ["Ficciones", "Labyrinths", "The Aleph"],
 		"themes": ["infinity", "labyrinths", "identity", "reality"]
 	},
 	"anne_carson": {
@@ -47,7 +39,6 @@
 		"description": "Canadian poet, essayist, and translator. Known for her innovative and genre-defying works. Major works include Autobiography of Red and The Beauty of the Husband. Themes: love, loss, mythology, the nature of art.",
 		"genres": ["poetry", "essay"],
 		"nationality": "Canadian",
-		"major_works": ["Autobiography of Red", "The Beauty of the Husband"],
 		"themes": ["love", "loss", "mythology", "the nature of art"]
 	},
 	"roberto_bolano": {
@@ -55,7 +46,6 @@
 		"description": "Chilean novelist, poet, and essayist. Known for his complex narratives and exploration of the human condition. Major works include The Savage Detectives and 2666. Themes: violence, memory, the search for meaning.",
 		"genres": ["novel", "poetry"],
 		"nationality": "Chilean",
-		"major_works": ["The Savage Detectives", "2666"],
 		"themes": ["violence", "memory", "poetry"]
 	},
 	"maryse_conde": {
@@ -63,15 +53,111 @@
 		"description": "Guadeloupean author known for her novels and essays exploring the complexities of Caribbean identity and history. Major works include Windward Heights and The Story of the Cannibal Woman. Themes: identity, colonialism, feminism.",
 		"genres": ["postcolonialism", "feminism"],
 		"nationality": "Guadeloupean",
-		"major_works": ["Windward Heights", "The Story of the Cannibal Woman"],
 		"themes": ["identity", "colonialism", "feminism"]
 	},
-	"marcel_shwob": {
+	"marcel_schwob": {
 		"name": "Marcel Schwob",
 		"description": "French symbolist writer known for his short stories and innovative narrative techniques. Major works include The Book of Monelle and Imaginary Lives. Themes: identity, transformation, the uncanny.",
 		"genres": ["symbolism", "fantasy"],
 		"nationality": "French",
-		"major_works": ["The Book of Monelle", "Imaginary Lives"],
 		"themes": ["identity", "transformation", "the uncanny"]
+	},
+	"toni_morrison": {
+		"name": "Toni Morrison",
+		"description": "American novelist, Nobel Prize winner. Major works include Beloved, Song of Solomon. Themes: African-American identity, history, racism.",
+		"genres": ["literary fiction", "historical fiction"],
+		"nationality": "American",
+		"themes": ["African-American identity", "history", "racism"]
+	},
+	"chimamanda_ngozi_adichie": {
+		"name": "Chimamanda Ngozi Adichie",
+		"description": "Nigerian novelist and feminist. Major works include Purple Hibiscus, Half of a Yellow Sun. Themes: colonialism, feminism, cultural identity.",
+		"genres": ["literary fiction", "feminism"],
+		"nationality": "Nigerian",
+		"themes": ["colonialism", "feminism", "cultural identity"]
+	},
+	"salman_rushdie": {
+		"name": "Salman Rushdie",
+		"description": "British-Indian novelist. Major works include Midnight's Children, The Satanic Verses. Themes: post-colonialism, migration, hybrid identity.",
+		"genres": ["magical realism", "satire"],
+		"nationality": "British-Indian",
+		"themes": ["post-colonialism", "migration", "hybrid identity"]
+	},
+	"margaret_atwood": {
+		"name": "Margaret Atwood",
+		"description": "Canadian novelist and poet. Major works include The Handmaid's Tale, Oryx and Crake. Themes: feminism, dystopia, environmentalism.",
+		"genres": ["speculative fiction", "dystopian fiction"],
+		"nationality": "Canadian",
+		"themes": ["feminism", "dystopia", "environmentalism"]
+	},
+	"arundhati_roy": {
+		"name": "Arundhati Roy",
+		"description": "Indian author and activist. Major works include The God of Small Things. Themes: caste system, post-colonialism, political activism.",
+		"genres": ["literary fiction"],
+		"nationality": "Indian",
+		"themes": ["caste system", "post-colonialism", "political activism"]
+	},
+	"yukio_mishima": {
+		"name": "Yukio Mishima",
+		"description": "Japanese novelist, poet, playwright. Major works include The Temple of the Golden Pavilion, Confessions of a Mask. Themes: beauty, death, traditionalism vs modernity.",
+		"genres": ["modernism", "dramatic fiction"],
+		"nationality": "Japanese",
+		"themes": ["beauty", "death", "traditionalism vs modernity"]
+	},
+	"isabel_allende": {
+		"name": "Isabel Allende",
+		"description": "Chilean novelist. Major works include The House of the Spirits, Eva Luna. Themes: magical realism, family sagas, political turmoil.",
+		"genres": ["magical realism", "historical fiction"],
+		"nationality": "Chilean",
+		"themes": ["magical realism", "family sagas", "political turmoil"]
+	},
+	"assia_djebar": {
+		"name": "Assia Djebar",
+		"description": "Algerian novelist and historian. Major works include Fantasia: An Algerian Cavalcade, Women of Algiers in Their Apartment. Themes: feminism, colonialism, Algerian history.",
+		"genres": ["historical fiction", "autobiographical fiction"],
+		"nationality": "Algerian",
+		"themes": ["feminism", "colonialism", "Algerian history"]
+	},
+	"kazuo_ishiguro": {
+		"name": "Kazuo Ishiguro",
+		"description": "British novelist of Japanese origin. Major works include The Remains of the Day, Never Let Me Go. Themes: memory, identity, historical amnesia.",
+		"genres": ["literary fiction", "historical fiction"],
+		"nationality": "British",
+		"themes": ["memory", "identity", "historical amnesia"]
+	},
+	"zadie_smith": {
+		"name": "Zadie Smith",
+		"description": "British novelist. Major works include White Teeth, NW. Themes: multiculturalism, identity, urban life.",
+		"genres": ["literary fiction"],
+		"nationality": "British",
+		"themes": ["multiculturalism", "identity", "urban life"]
+	},
+	"orhan_pamuk": {
+		"name": "Orhan Pamuk",
+		"description": "Turkish novelist and Nobel Prize winner. Major works include My Name Is Red, Snow. Themes: East-West divide, identity, art and religion.",
+		"genres": ["historical fiction", "postmodernism"],
+		"nationality": "Turkish",
+		"themes": ["East-West divide", "identity", "art and religion"]
+	},
+	"gao_xingjian": {
+		"name": "Gao Xingjian",
+		"description": "Chinese-French novelist, playwright, critic, and Nobel Prize winner. Major works include Soul Mountain, One Man's Bible. Themes: existentialism, identity, exile.",
+		"genres": ["modernism", "existentialism"],
+		"nationality": "Chinese-French",
+		"themes": ["existentialism", "identity", "exile"]
+	},
+	"ocean_vuong": {
+		"name": "Ocean Vuong",
+		"description": "Vietnamese-American poet, essayist, and novelist. Major works include Night Sky with Exit Wounds, On Earth We're Briefly Gorgeous. Themes: immigration, identity, trauma.",
+		"genres": ["poetry", "literary fiction"],
+		"nationality": "Vietnamese-American",
+		"themes": ["immigration", "identity", "trauma"]
+	},
+	"ts_eliot": {
+		"name": "T.S. Eliot",
+		"description": "American-British poet, essayist, and playwright. Major works include The Waste Land, Four Quartets. Themes: modernism, time, spirituality.",
+		"genres": ["modernism", "poetry"],
+		"nationality": "American-British",
+		"themes": ["modernism", "time", "spirituality"]
 	}
 }
