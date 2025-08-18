@@ -1,16 +1,13 @@
 import { InferenceClient } from "@huggingface/inference";
+import "dotenv/config";
 
-const hf = new InferenceClient(process.env.HF_ACCESS_TOKEN);
+const client = new InferenceClient(process.env.HF_ACCESS_TOKEN);
 
 export async function getEmbedding(text: string) {
-	try {
-		const response = await hf.featureExtraction({
-			model: "BAAI/bge-m3",
-			inputs: text,
-		});
-		return response as number[];
-	} catch (error) {
-		console.error("Embedding generation failed:", error);
-		return null;
-	}
+	const response = await client.featureExtraction({
+		model: "intfloat/multilingual-e5-large",
+		inputs: text,
+		provider: "hf-inference",
+	});
+	return response as number[];
 }
