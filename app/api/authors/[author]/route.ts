@@ -62,6 +62,3 @@ export async function GET(
 		);
 	}
 }
-
-// TODO: Find a better way to map authors 'proximity'
-// TODO: Animate the map

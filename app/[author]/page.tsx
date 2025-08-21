@@ -48,57 +48,63 @@ export default function AuthorPage() {
 
 	if (loading) {
 		return (
-			<div className='flex items-center justify-center min-h-screen'>
-				<div className='text-xl'>Exploring the infinite library...</div>
+			<div>
+				<div>Exploring the infinite library...</div>
 			</div>
 		);
 	}
 
 	if (!data) {
 		return (
-			<div className='flex items-center justify-center min-h-screen'>
-				<div className='text-xl'>Author not found in the library...</div>
+			<div>
+				<div>Author not found in the library...</div>
 			</div>
 		);
 	}
 
-	const RADIUS = 220;
-	const CENTER = 250;
-	const minRadius = 120;
-	const maxRadius = RADIUS;
 	const authors = data.similarAuthors;
 
 	return (
-		<div className='flex items-center justify-center min-h-screen'>
+		<div className='relative w-screen h-screen'>
 			<div
-				className='relative mx-auto'
-				style={{ width: 2 * CENTER, height: 2 * CENTER }}>
-				<div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-2xl z-10 whitespace-nowrap'>
-					{data.centralAuthor.name}
-				</div>
-
-				{authors.map((author, i) => {
-					const angle = (2 * Math.PI * i) / authors.length;
-					const radius =
-						minRadius +
-						(1 - (author.similarity ?? 0.5)) * (maxRadius - minRadius);
-					const x = CENTER + radius * Math.cos(angle);
-					const y = CENTER + radius * Math.sin(angle);
-					return (
-						<div
-							key={author.id}
-							className='absolute text-base font-normal cursor-pointer whitespace-nowrap'
-							style={{
-								left: `${x}px`,
-								top: `${y}px`,
-								transform: "translate(-50%, -50%)",
-							}}
-							onClick={() => router.push(`/${author.id}`)}>
-							{author.name}
-						</div>
-					);
-				})}
+				className='absolute font-bold left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer'
+				onClick={() => router.push(`/${data.centralAuthor.id}`)}>
+				{data.centralAuthor.name}
 			</div>
+
+			{authors.map((author) => {
+				const similarity = author.similarity ?? 0.5;
+				const maxDistance =
+					Math.min(window.innerWidth, window.innerHeight) * 0.45;
+				const minDistance =
+					Math.min(window.innerWidth, window.innerHeight) * 0.05;
+				const distance =
+					minDistance + (1 - similarity) * (maxDistance - minDistance);
+
+				const seedHash = author.id.split("").reduce((a, b) => {
+					a = (a << 5) - a + b.charCodeAt(0);
+					return a & a;
+				}, 0);
+				const randomAngle = (seedHash % 360) * (Math.PI / 180);
+
+				const x =
+					50 + ((distance * Math.cos(randomAngle)) / window.innerWidth) * 100;
+				const y =
+					50 + ((distance * Math.sin(randomAngle)) / window.innerHeight) * 100;
+
+				return (
+					<div
+						key={author.id}
+						className='absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer'
+						style={{
+							left: `${x}%`,
+							top: `${y}%`,
+						}}
+						onClick={() => router.push(`/${author.id}`)}>
+						{author.name}
+					</div>
+				);
+			})}
 		</div>
 	);
 }

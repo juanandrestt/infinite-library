@@ -4,12 +4,16 @@ import { getEmbedding } from "../lib/embeddings";
 
 async function generateAllEmbeddings() {
 	const authorsPath = path.join(process.cwd(), "app", "data", "authors.json");
-	const embeddingsPath = path.join(process.cwd(), "app", "data", "embeddings.json");
+	const embeddingsPath = path.join(
+		process.cwd(),
+		"app",
+		"data",
+		"embeddings.json"
+	);
 
 	type Author = {
 		name: string;
 		description: string;
-		nationality: string;
 		genres: string[];
 		themes: string[];
 	};
@@ -25,7 +29,6 @@ async function generateAllEmbeddings() {
 		const embeddingText = `
     ${authorData.name}
     ${authorData.description}
-    ${authorData.nationality}
     ${authorData.genres.join(",")}
     ${authorData.themes.join(",")}
     `;

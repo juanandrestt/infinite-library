@@ -22,5 +22,18 @@ export default function findSimilarAuthors(
 		.sort((a, b) => b.similarity - a.similarity)
 		.slice(0, limit);
 
+	if (similarities.length > 1) {
+		const maxSim = similarities[0].similarity;
+		const minSim = similarities[similarities.length - 1].similarity;
+		const range = maxSim - minSim;
+
+		if (range > 0) {
+			similarities.forEach((item) => {
+				const normalized = (item.similarity - minSim) / range;
+				item.similarity = Math.pow(normalized, 3);
+			});
+		}
+	}
+
 	return similarities;
 }
