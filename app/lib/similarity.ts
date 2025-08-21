@@ -30,7 +30,7 @@ export default function findSimilarAuthors(
 		if (range > 0) {
 			similarities.forEach((item) => {
 				const normalized = (item.similarity - minSim) / range;
-				item.similarity = Math.pow(normalized, 3);
+				item.similarity = Math.sqrt(normalized);
 			});
 		}
 	}
