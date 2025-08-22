@@ -9,8 +9,7 @@ export function cosineSimilarity(vecA: number[], vecB: number[]): number {
 
 export default function findSimilarAuthors(
 	targetAuthorId: string,
-	allEmbeddings: Record<string, number[]>,
-	limit: number = 20
+	allEmbeddings: Record<string, number[]>
 ): SimilarAuthor[] {
 	const targetEmbedding = allEmbeddings[targetAuthorId];
 	if (!targetEmbedding) return [];
@@ -21,8 +20,7 @@ export default function findSimilarAuthors(
 			authorId: id,
 			similarity: cosineSimilarity(targetEmbedding, embedding),
 		}))
-		.sort((a, b) => b.similarity - a.similarity)
-		.slice(0, limit);
+		.sort((a, b) => b.similarity - a.similarity);
 
 	if (similarities.length > 1) {
 		const maxSim = similarities[0].similarity;

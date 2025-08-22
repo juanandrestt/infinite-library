@@ -1,16 +1,46 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
 import type { ApiResponse } from "../types";
+import * as d3 from "d3";
 
 export default function AuthorPage() {
 	const params = useParams();
 	const router = useRouter();
 	const author = params.author as string;
+	const [maxDistance, setMaxDistance] = useState(400);
+	const [nodes, setNodes] = useState<
+		Array<{
+			id: string;
+			name: string;
+			similarity: number;
+			x: number;
+			y: number;
+		}>
+	>([]);
+	const simulationRef = useRef<d3.Simulation<
+		{
+			id: string;
+			name: string;
+			similarity: number;
+			x: number;
+			y: number;
+		},
+		undefined
+	> | null>(null);
 
 	const [data, setData] = useState<ApiResponse | null>(null);
-	const [loading, setLoading] = useState(false);
+
+	useEffect(() => {
+		function updateDistances() {
+			const minDim = Math.min(window.innerWidth, window.innerHeight);
+			setMaxDistance(minDim * 0.45);
+		}
+		updateDistances();
+		window.addEventListener("resize", updateDistances);
+		return () => window.removeEventListener("resize", updateDistances);
+	}, []);
 
 	useEffect(() => {
 		if (author) {
@@ -19,79 +49,102 @@ export default function AuthorPage() {
 	}, [author]);
 
 	const fetchAuthorData = async (authorName: string) => {
-		setLoading(true);
 		try {
 			const response = await fetch(`/api/authors/${authorName}`);
-			if (!response.ok) throw new Error("Author not found");
-
 			const data = await response.json();
 			setData(data);
 		} catch (error) {
 			console.error("Failed to fetch author data:", error);
-		} finally {
-			setLoading(false);
 		}
 	};
 
-	if (loading) {
+	const visibleAuthors = useMemo(() => {
+		const authors = data?.similarAuthors ?? [];
+		return authors.slice(0, 20);
+	}, [data?.similarAuthors]);
+
+	useEffect(() => {
+		if (typeof window === "undefined" || visibleAuthors.length === 0) return;
+		const width = window.innerWidth;
+		const height = window.innerHeight;
+		const initialNodes = visibleAuthors.map((author) => ({
+			id: author.id,
+			name: author.name,
+			similarity: author.similarity ?? 0.5,
+			x: width / 2,
+			y: height / 2,
+		}));
+		const simulation = d3
+			.forceSimulation(initialNodes)
+			.force("center", d3.forceCenter(width / 2, height / 2))
+			.force("charge", d3.forceManyBody().strength(-120))
+			.force("collision", d3.forceCollide().radius(50))
+			.force(
+				"radial",
+				d3.forceRadial(
+					(d) => {
+						return 100 + (1 - d.similarity) * (Math.min(width, height) * 0.4);
+					},
+					width / 2,
+					height / 2
+				)
+			)
+			.stop();
+		for (let i = 0; i < 120; ++i) simulation.tick();
+		setNodes([...initialNodes]);
+		simulationRef.current = simulation;
+	}, [visibleAuthors, maxDistance]);
+
+	if (!data || !data.centralAuthor) {
 		return (
-			<div>
-				<div>Exploring the infinite library...</div>
+			<div className='relative w-screen h-screen'>
+				<div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
+					Loading...
+				</div>
 			</div>
 		);
 	}
-
-	if (!data) {
-		return (
-			<div>
-				<div>Author not found in the library...</div>
-			</div>
-		);
-	}
-
-	const authors = data.similarAuthors;
 
 	return (
 		<div className='relative w-screen h-screen'>
 			<div
-				className='absolute font-bold left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer'
+				className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold cursor-pointer'
 				onClick={() => router.push(`/${data.centralAuthor.id}`)}>
 				{data.centralAuthor.name}
 			</div>
-
-			{authors.map((author) => {
-				const similarity = author.similarity ?? 0.5;
-				const maxDistance =
-					Math.min(window.innerWidth, window.innerHeight) * 0.45;
-				const minDistance =
-					Math.min(window.innerWidth, window.innerHeight) * 0.05;
-				const distance =
-					minDistance + (1 - similarity) * (maxDistance - minDistance);
-
-				const seedHash = author.id.split("").reduce((a, b) => {
-					a = (a << 5) - a + b.charCodeAt(0);
-					return a & a;
-				}, 0);
-				const randomAngle = (seedHash % 360) * (Math.PI / 180);
-
-				const x =
-					50 + ((distance * Math.cos(randomAngle)) / window.innerWidth) * 100;
-				const y =
-					50 + ((distance * Math.sin(randomAngle)) / window.innerHeight) * 100;
-
-				return (
-					<div
-						key={author.id}
-						className='absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer'
-						style={{
-							left: `${x}%`,
-							top: `${y}%`,
-						}}
-						onClick={() => router.push(`/${author.id}`)}>
-						{author.name}
-					</div>
-				);
-			})}
+			{nodes.length > 0 && (
+				<svg
+					className='absolute inset-0 pointer-events-none'
+					width={window.innerWidth}
+					height={window.innerHeight}
+					style={{ left: 0, top: 0 }}>
+					{nodes.map((node) => (
+						<line
+							key={`line-${node.id}`}
+							x1={window.innerWidth / 2}
+							y1={window.innerHeight / 2}
+							x2={node.x}
+							y2={node.y}
+							stroke='#cbd5e1'
+							strokeWidth='1'
+							opacity='0.4'
+						/>
+					))}
+				</svg>
+			)}
+			{nodes.map((node) => (
+				<div
+					key={node.id}
+					className='absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer'
+					style={{
+						left: `${node.x}px`,
+						top: `${node.y}px`,
+						fontWeight: node.id === data.centralAuthor.id ? "bold" : "normal",
+					}}
+					onClick={() => router.push(`/${node.id}`)}>
+					{node.name}
+				</div>
+			))}
 		</div>
 	);
 }

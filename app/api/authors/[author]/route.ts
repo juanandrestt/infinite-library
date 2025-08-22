@@ -41,7 +41,7 @@ export async function GET(
 			);
 		}
 
-		const similarAuthors = findSimilarAuthors(authorId, embeddingsData, 35);
+		const similarAuthors = findSimilarAuthors(authorId, embeddingsData);
 
 		const enrichedResults: Author[] = similarAuthors.map(
 			({ authorId: id, similarity }) => ({

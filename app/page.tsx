@@ -1,40 +1,69 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import authorsData from "@/app/data/authors.json";
+import { Author } from "./types";
+
+const authors = Object.entries(authorsData).map(([id, author]) => ({
+	id,
+	...author,
+}));
 
 export default function HomePage() {
 	const [searchQuery, setSearchQuery] = useState("");
+	const [results, setResults] = useState<Author[]>([]);
+	const [showDropdown, setShowDropdown] = useState(false);
 	const router = useRouter();
 
-	const handleSearch = (e: React.FormEvent) => {
-		e.preventDefault();
-		if (searchQuery.trim()) {
-			const authorId = searchQuery
-				.toLowerCase()
-				.replace(/\s+/g, "_")
-				.replace(/[^\w_]/g, "");
-			router.push(`/${authorId}`);
+	useEffect(() => {
+		if (searchQuery.trim() === "") {
+			setResults([]);
+			setShowDropdown(false);
+			return;
 		}
-	};
+		const filtered = authors.filter((author) =>
+			author.name.toLowerCase().includes(searchQuery.toLowerCase())
+		);
+		setResults(filtered);
+		setShowDropdown(filtered.length > 0);
+	}, [searchQuery]);
+
+	function handleSelect(author: Author) {
+		router.push(`/${author.id}`);
+	}
 
 	return (
-		<div className='min-h-screen flex flex-col items-center justify-start pt-16'>
-			<h1 className='text-3xl font-bold mb-52'>The Infinite Library</h1>
-			<form onSubmit={handleSearch} className='w-full max-w-sm flex gap-2'>
-				<input
-					type='text'
-					value={searchQuery}
-					onChange={(e) => setSearchQuery(e.target.value)}
-					placeholder='Search author...'
-					className='flex-1 border rounded px-4 py-2'
-				/>
-				<button type='submit' className='border rounded px-4 py-2'>
-					Search
-				</button>
-			</form>
-
-			<footer className='absolute bottom-4 right-8 flex flex-col'>
+		<div>
+			<h1>The Infinite Library</h1>
+			<input
+				type='text'
+				value={searchQuery}
+				onChange={(e) => setSearchQuery(e.target.value)}
+				placeholder='Search author...'
+				onFocus={() => setShowDropdown(results.length > 0)}
+				onBlur={() => setTimeout(() => setShowDropdown(false), 100)}
+				onKeyDown={(e) => {
+					if (e.key === "Enter") {
+						const match = results.find(
+							(a) => a.name.toLowerCase() === searchQuery.toLowerCase()
+						);
+						if (match) {
+							handleSelect(match);
+						}
+					}
+				}}
+			/>
+			{showDropdown && (
+				<ul>
+					{results.map((author) => (
+						<li key={author.id} onMouseDown={() => handleSelect(author)}>
+							{author.name}
+						</li>
+					))}
+				</ul>
+			)}
+			<footer>
 				<a href='https://github.com/juanandrestt/infinite-library'>github</a>
 				<a href='https://www.juantrujillo.world'>by Juan Trujillo</a>
 			</footer>
