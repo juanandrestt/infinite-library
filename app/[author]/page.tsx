@@ -2,20 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-
-interface Author {
-	id: string;
-	name: string;
-	description: string;
-	nationality: string;
-	genres: string[];
-	similarity?: number;
-}
-
-interface ApiResponse {
-	centralAuthor: Author;
-	similarAuthors: Author[];
-}
+import type { ApiResponse } from "../types";
 
 export default function AuthorPage() {
 	const params = useParams();

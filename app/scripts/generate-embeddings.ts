@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { getEmbedding } from "../lib/embeddings";
+import { Author } from "../types";
 
 async function generateAllEmbeddings() {
 	const authorsPath = path.join(process.cwd(), "app", "data", "authors.json");
@@ -10,13 +11,6 @@ async function generateAllEmbeddings() {
 		"data",
 		"embeddings.json"
 	);
-
-	type Author = {
-		name: string;
-		description: string;
-		genres: string[];
-		themes: string[];
-	};
 
 	const authors: Record<string, Author> = JSON.parse(
 		fs.readFileSync(authorsPath, "utf8")

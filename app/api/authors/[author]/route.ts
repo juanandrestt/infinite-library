@@ -1,14 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import findSimilarAuthors from "../../../lib/similarity";
+import { Author, ApiResponse } from "../../../types";
 import fs from "fs";
 import path from "path";
 
-const getAuthorsData = () => {
+const getAuthorsData = (): Record<string, Omit<Author, "id">> => {
 	const authorsPath = path.join(process.cwd(), "app", "data", "authors.json");
 	return JSON.parse(fs.readFileSync(authorsPath, "utf8"));
 };
 
-const getEmbeddingsData = () => {
+const getEmbeddingsData = (): Record<string, number[]> => {
 	const embeddingsPath = path.join(
 		process.cwd(),
 		"app",
@@ -42,7 +43,7 @@ export async function GET(
 
 		const similarAuthors = findSimilarAuthors(authorId, embeddingsData, 35);
 
-		const enrichedResults = similarAuthors.map(
+		const enrichedResults: Author[] = similarAuthors.map(
 			({ authorId: id, similarity }) => ({
 				...authorsData[id],
 				id,
@@ -50,10 +51,12 @@ export async function GET(
 			})
 		);
 
-		return NextResponse.json({
+		const response: ApiResponse = {
 			centralAuthor: { ...authorsData[authorId], id: authorId },
 			similarAuthors: enrichedResults,
-		});
+		};
+
+		return NextResponse.json(response);
 	} catch (error) {
 		console.error("API Error:", error);
 		return NextResponse.json(
