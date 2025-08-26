@@ -1,8 +1,8 @@
 import React from "react";
+import { Author } from "../app/types/author";
 
 export type AuthorNodeProps = {
-	id: string;
-	name: string;
+	author: Author;
 	x: number;
 	y: number;
 	isCentral?: boolean;
@@ -10,8 +10,7 @@ export type AuthorNodeProps = {
 };
 
 const AuthorNode: React.FC<AuthorNodeProps> = ({
-	id,
-	name,
+	author,
 	x,
 	y,
 	isCentral = false,
@@ -24,8 +23,8 @@ const AuthorNode: React.FC<AuthorNodeProps> = ({
 			top: `${y}px`,
 			fontWeight: isCentral ? "bold" : "normal",
 		}}
-		onClick={() => onClick?.(id)}>
-		{name}
+		onClick={() => onClick?.(author.id)}>
+		{author.name}
 	</div>
 );
 

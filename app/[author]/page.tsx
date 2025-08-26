@@ -136,8 +136,14 @@ export default function AuthorPage() {
 			{nodes.map((node) => (
 				<AuthorNode
 					key={node.id}
-					id={node.id}
-					name={node.name}
+					author={{
+						id: node.id,
+						name: node.name,
+						description: "",
+						genres: [],
+						themes: [],
+						similarity: node.similarity,
+					}}
 					x={node.x}
 					y={node.y}
 					isCentral={node.id === data.centralAuthor.id}
