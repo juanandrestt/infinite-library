@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef, useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
+import AuthorNode from "../../components/AuthorNode";
 import type { ApiResponse } from "../types";
 import * as d3 from "d3";
 
@@ -133,17 +134,15 @@ export default function AuthorPage() {
 				</svg>
 			)}
 			{nodes.map((node) => (
-				<div
+				<AuthorNode
 					key={node.id}
-					className='absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer'
-					style={{
-						left: `${node.x}px`,
-						top: `${node.y}px`,
-						fontWeight: node.id === data.centralAuthor.id ? "bold" : "normal",
-					}}
-					onClick={() => router.push(`/${node.id}`)}>
-					{node.name}
-				</div>
+					id={node.id}
+					name={node.name}
+					x={node.x}
+					y={node.y}
+					isCentral={node.id === data.centralAuthor.id}
+					onClick={(id: string) => router.push(`/${id}`)}
+				/>
 			))}
 		</div>
 	);
