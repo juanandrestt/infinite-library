@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const aujournuitRegular = localFont({
+	src: "../public/fonts/Aujournuit-Regular.woff2",
+	display: "swap",
+	variable: "--font-aujournuit-regular",
+});
 
 export const metadata: Metadata = {
 	title: "The Infinite Library",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body>{children}</body>
+			<body className={aujournuitRegular.className}>{children}</body>
 		</html>
 	);
 }
