@@ -6,21 +6,23 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
 import SearchBar from "../components/SearchBar";
+import Background from "@/components/Background";
 
 export default function HomePage() {
-	const router = useRouter();
+  const router = useRouter();
 
-	function handleAuthorSelect(author: Author) {
-		router.push(`/${author.id}`);
-	}
+  function handleAuthorSelect(author: Author) {
+    router.push(`/${author.id}`);
+  }
 
-	return (
-		<>
-			<Header />
-			<Main>
-				<SearchBar onSelect={handleAuthorSelect} />
-			</Main>
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <Background />
+      <Header />
+      <Main>
+        <SearchBar onSelect={handleAuthorSelect} />
+      </Main>
+      <Footer />
+    </>
+  );
 }

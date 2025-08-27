@@ -1,278 +1,278 @@
 {
-	"gabriel_garcia_marquez": {
-		"name": "Gabriel García Márquez",
-		"description": "Colombian novelist, Nobel Prize winner, magical realism pioneer. Major works include One Hundred Years of Solitude, Love in the Time of Cholera. Themes: solitude, time, memory, Latin American identity, cyclical history, magical realism techniques.",
-		"genres": ["magical realism", "literary fiction"],
-		"themes": ["solitude", "time", "memory", "family sagas"]
-	},
-	"clarice_lispector": {
-		"name": "Clarice Lispector",
-		"description": "Brazilian novelist, modernist, existentialist. Known for introspective prose and exploration of the self. Major works include The Hour of the Star, The Passion According to G.H. Themes: identity, existence, the inner self.",
-		"genres": ["modernism", "existentialism"],
-		"themes": ["identity", "existence", "the inner self"]
-	},
-	"edouard_glissant": {
-		"name": "Édouard Glissant",
-		"description": "Martinican poet, novelist, and essayist. Major works include The Poetics of Relation, and The Overcoming of History. Themes: identity, history, and the Caribbean experience.",
-		"genres": ["postcolonialism", "magical realism"],
-		"themes": ["identity", "history", "the Caribbean experience", "colonialism"]
-	},
-	"alejandra_pizarnik": {
-		"name": "Alejandra Pizarnik",
-		"description": "Argentinian poet and writer known for her intense and lyrical poetry. Major works include Works and Nights and Extracting the Stone of Madness. Themes: solitude, existentialism, the search for identity.",
-		"genres": ["poetry", "existentialism"],
-		"themes": ["solitude", "existentialism", "identity"]
-	},
-	"jorge_luis_borges": {
-		"name": "Jorge Luis Borges",
-		"description": "Argentinian writer, poet, and essayist. Known for his intricate short stories and philosophical themes. Major works include Ficciones, Labyrinths, and The Aleph. Themes: infinity, labyrinths, identity, reality.",
-		"genres": ["fantasy", "philosophical fiction"],
-		"themes": ["infinity", "labyrinths", "identity", "reality"]
-	},
-	"anne_carson": {
-		"name": "Anne Carson",
-		"description": "Canadian poet, essayist, and translator. Known for her innovative and genre-defying works. Major works include Autobiography of Red and The Beauty of the Husband. Themes: love, loss, mythology, the nature of art.",
-		"genres": ["poetry", "essay"],
-		"themes": ["love", "loss", "mythology", "the nature of art"]
-	},
-	"roberto_bolano": {
-		"name": "Roberto Bolaño",
-		"description": "Chilean novelist, poet, and essayist. Known for his complex narratives and exploration of the human condition. Major works include The Savage Detectives and 2666. Themes: violence, memory, the search for meaning.",
-		"genres": ["novel", "poetry"],
-		"themes": ["violence", "memory", "poetry"]
-	},
-	"maryse_conde": {
-		"name": "Maryse Condé",
-		"description": "Guadeloupean author known for her novels and essays exploring the complexities of Caribbean identity and history. Major works include Windward Heights and The Story of the Cannibal Woman. Themes: identity, colonialism, feminism.",
-		"genres": ["postcolonialism", "feminism"],
-		"themes": ["identity", "colonialism", "feminism"]
-	},
-	"marcel_schwob": {
-		"name": "Marcel Schwob",
-		"description": "French symbolist writer known for his short stories and innovative narrative techniques. Major works include The Book of Monelle and Imaginary Lives. Themes: identity, transformation, the uncanny.",
-		"genres": ["symbolism", "fantasy"],
-		"themes": ["identity", "transformation", "the uncanny"]
-	},
-	"toni_morrison": {
-		"name": "Toni Morrison",
-		"description": "American novelist, Nobel Prize winner. Major works include Beloved, Song of Solomon. Themes: African-American identity, history, racism.",
-		"genres": ["literary fiction", "historical fiction"],
-		"themes": ["African-American identity", "history", "racism"]
-	},
-	"chimamanda_ngozi_adichie": {
-		"name": "Chimamanda Ngozi Adichie",
-		"description": "Nigerian novelist and feminist. Major works include Purple Hibiscus, Half of a Yellow Sun. Themes: colonialism, feminism, cultural identity.",
-		"genres": ["literary fiction", "feminism"],
-		"themes": ["colonialism", "feminism", "cultural identity"]
-	},
-	"salman_rushdie": {
-		"name": "Salman Rushdie",
-		"description": "British-Indian novelist. Major works include Midnight's Children, The Satanic Verses. Themes: post-colonialism, migration, hybrid identity.",
-		"genres": ["magical realism", "satire"],
-		"themes": ["post-colonialism", "migration", "hybrid identity"]
-	},
-	"margaret_atwood": {
-		"name": "Margaret Atwood",
-		"description": "Canadian novelist and poet. Major works include The Handmaid's Tale, Oryx and Crake. Themes: feminism, dystopia, environmentalism.",
-		"genres": ["speculative fiction", "dystopian fiction"],
-		"themes": ["feminism", "dystopia", "environmentalism"]
-	},
-	"arundhati_roy": {
-		"name": "Arundhati Roy",
-		"description": "Indian author and activist. Major works include The God of Small Things. Themes: caste system, post-colonialism, political activism.",
-		"genres": ["literary fiction"],
-		"themes": ["caste system", "post-colonialism", "political activism"]
-	},
-	"yukio_mishima": {
-		"name": "Yukio Mishima",
-		"description": "Japanese novelist, poet, playwright. Major works include The Temple of the Golden Pavilion, Confessions of a Mask. Themes: beauty, death, traditionalism vs modernity.",
-		"genres": ["modernism", "dramatic fiction"],
-		"themes": ["beauty", "death", "traditionalism vs modernity"]
-	},
-	"isabel_allende": {
-		"name": "Isabel Allende",
-		"description": "Chilean novelist. Major works include The House of the Spirits, Eva Luna. Themes: magical realism, family sagas, political turmoil.",
-		"genres": ["magical realism", "historical fiction"],
-		"themes": ["magical realism", "family sagas", "political turmoil"]
-	},
-	"assia_djebar": {
-		"name": "Assia Djebar",
-		"description": "Algerian novelist and historian. Major works include Fantasia: An Algerian Cavalcade, Women of Algiers in Their Apartment. Themes: feminism, colonialism, Algerian history.",
-		"genres": ["historical fiction", "autobiographical fiction"],
-		"themes": ["feminism", "colonialism", "Algerian history"]
-	},
-	"kazuo_ishiguro": {
-		"name": "Kazuo Ishiguro",
-		"description": "British novelist of Japanese origin. Major works include The Remains of the Day, Never Let Me Go. Themes: memory, identity, historical amnesia.",
-		"genres": ["literary fiction", "historical fiction"],
-		"themes": ["memory", "identity", "historical amnesia"]
-	},
-	"zadie_smith": {
-		"name": "Zadie Smith",
-		"description": "British novelist. Major works include White Teeth, NW. Themes: multiculturalism, identity, urban life.",
-		"genres": ["literary fiction"],
-		"themes": ["multiculturalism", "identity", "urban life"]
-	},
-	"orhan_pamuk": {
-		"name": "Orhan Pamuk",
-		"description": "Turkish novelist and Nobel Prize winner. Major works include My Name Is Red, Snow. Themes: East-West divide, identity, art and religion.",
-		"genres": ["historical fiction", "postmodernism"],
-		"themes": ["East-West divide", "identity", "art and religion"]
-	},
-	"gao_xingjian": {
-		"name": "Gao Xingjian",
-		"description": "Chinese-French novelist, playwright, critic, and Nobel Prize winner. Major works include Soul Mountain, One Man's Bible. Themes: existentialism, identity, exile.",
-		"genres": ["modernism", "existentialism"],
-		"themes": ["existentialism", "identity", "exile"]
-	},
-	"ocean_vuong": {
-		"name": "Ocean Vuong",
-		"description": "Vietnamese-American poet, essayist, and novelist. Major works include Night Sky with Exit Wounds, On Earth We're Briefly Gorgeous. Themes: immigration, identity, trauma.",
-		"genres": ["poetry", "literary fiction"],
-		"themes": ["immigration", "identity", "trauma"]
-	},
-	"ts_eliot": {
-		"name": "T.S. Eliot",
-		"description": "American-British poet, essayist, and playwright. Major works include The Waste Land, Four Quartets. Themes: modernism, time, spirituality.",
-		"genres": ["modernism", "poetry"],
-		"themes": ["modernism", "time", "spirituality"]
-	},
-	"william_shakespeare": {
-		"name": "William Shakespeare",
-		"description": "English playwright and poet. Major works include Hamlet, Romeo and Juliet, Macbeth. Themes: love, power, betrayal, fate, identity.",
-		"genres": ["drama", "poetry", "tragedy"],
-		"themes": ["love", "power", "betrayal", "fate", "identity"]
-	},
-	"leo_tolstoy": {
-		"name": "Leo Tolstoy",
-		"description": "Russian novelist and moral philosopher. Major works include War and Peace, Anna Karenina. Themes: morality, war, family, society, spirituality.",
-		"genres": ["novel", "historical fiction"],
-		"themes": ["morality", "war", "family", "society", "spirituality"]
-	},
-	"fyodor_dostoevsky": {
-		"name": "Fyodor Dostoevsky",
-		"description": "Russian novelist and philosopher. Major works include Crime and Punishment, The Brothers Karamazov. Themes: psychology, faith, guilt, redemption, existentialism.",
-		"genres": ["novel", "philosophical fiction"],
-		"themes": ["psychology", "faith", "guilt", "redemption", "existentialism"]
-	},
-	"jane_austen": {
-		"name": "Jane Austen",
-		"description": "English novelist. Major works include Pride and Prejudice, Emma, Sense and Sensibility. Themes: love, class, marriage, society, gender roles.",
-		"genres": ["novel", "romance"],
-		"themes": ["love", "class", "marriage", "society", "gender roles"]
-	},
-	"charles_dickens": {
-		"name": "Charles Dickens",
-		"description": "English novelist and social critic. Major works include Great Expectations, Oliver Twist, A Tale of Two Cities. Themes: poverty, justice, childhood, society, redemption.",
-		"genres": ["novel", "historical fiction"],
-		"themes": ["poverty", "justice", "childhood", "society", "redemption"]
-	},
-	"virginia_woolf": {
-		"name": "Virginia Woolf",
-		"description": "English modernist writer. Major works include Mrs Dalloway, To the Lighthouse, Orlando. Themes: time, consciousness, gender, identity, mental health.",
-		"genres": ["modernism", "novel"],
-		"themes": ["time", "consciousness", "gender", "identity", "mental health"]
-	},
-	"franz_kafka": {
-		"name": "Franz Kafka",
-		"description": "Czech novelist and short story writer. Major works include The Metamorphosis, The Trial, The Castle. Themes: alienation, bureaucracy, absurdity, identity, existentialism.",
-		"genres": ["novel", "short story", "existentialism"],
-		"themes": [
-			"alienation",
-			"bureaucracy",
-			"absurdity",
-			"identity",
-			"existentialism"
-		]
-	},
-	"emily_dickinson": {
-		"name": "Emily Dickinson",
-		"description": "American poet. Major works include Because I could not stop for Death, I heard a Fly buzz—when I died. Themes: death, nature, love, isolation, immortality.",
-		"genres": ["poetry"],
-		"themes": ["death", "nature", "love", "isolation", "immortality"]
-	},
-	"homer": {
-		"name": "Homer",
-		"description": "Ancient Greek epic poet. Major works include The Iliad, The Odyssey. Themes: heroism, fate, war, journey, honor.",
-		"genres": ["epic poetry", "mythology"],
-		"themes": ["heroism", "fate", "war", "journey", "honor"]
-	},
-	"dante_alighieri": {
-		"name": "Dante Alighieri",
-		"description": "Italian poet. Major works include The Divine Comedy. Themes: sin, redemption, love, faith, journey.",
-		"genres": ["poetry", "allegory"],
-		"themes": ["sin", "redemption", "love", "faith", "journey"]
-	},
-	"george_orwell": {
-		"name": "George Orwell",
-		"description": "English novelist, essayist, and critic. Major works include 1984, Animal Farm. Themes: totalitarianism, freedom, truth, power, dystopia.",
-		"genres": ["dystopian fiction", "political fiction"],
-		"themes": ["totalitarianism", "freedom", "truth", "power", "dystopia"]
-	},
-	"h_g_wells": {
-		"name": "H.G. Wells",
-		"description": "English writer. Major works include The War of the Worlds, The Time Machine, The Invisible Man. Themes: science, future, society, evolution, ethics.",
-		"genres": ["science fiction", "novel"],
-		"themes": ["science", "future", "society", "evolution", "ethics"]
-	},
-	"oscar_wilde": {
-		"name": "Oscar Wilde",
-		"description": "Irish playwright, poet, and novelist. Major works include The Picture of Dorian Gray, The Importance of Being Earnest. Themes: beauty, art, morality, society, wit.",
-		"genres": ["drama", "novel", "poetry"],
-		"themes": ["beauty", "art", "morality", "society", "wit"]
-	},
-	"ernest_hemingway": {
-		"name": "Ernest Hemingway",
-		"description": "American novelist and short story writer. Major works include The Old Man and the Sea, A Farewell to Arms, For Whom the Bell Tolls. Themes: courage, war, loss, masculinity, nature.",
-		"genres": ["novel", "short story"],
-		"themes": ["courage", "war", "loss", "masculinity", "nature"]
-	},
-	"mark_twain": {
-		"name": "Mark Twain",
-		"description": "American novelist and humorist. Major works include Adventures of Huckleberry Finn, The Adventures of Tom Sawyer. Themes: childhood, freedom, race, society, adventure.",
-		"genres": ["novel", "humor", "adventure"],
-		"themes": ["childhood", "freedom", "race", "society", "adventure"]
-	},
-	"james_joyce": {
-		"name": "James Joyce",
-		"description": "Irish novelist and poet. Major works include Ulysses, Dubliners, A Portrait of the Artist as a Young Man. Themes: identity, time, consciousness, exile, language.",
-		"genres": ["modernism", "novel"],
-		"themes": ["identity", "time", "consciousness", "exile", "language"]
-	},
-	"marcel_proust": {
-		"name": "Marcel Proust",
-		"description": "French novelist. Major works include In Search of Lost Time. Themes: memory, time, love, society, art.",
-		"genres": ["novel", "modernism"],
-		"themes": ["memory", "time", "love", "society", "art"]
-	},
-	"j_r_r_tolkien": {
-		"name": "J.R.R. Tolkien",
-		"description": "English writer, philologist, and academic. Major works include The Lord of the Rings, The Hobbit, The Silmarillion. Themes: heroism, mythology, good vs evil, friendship, journey.",
-		"genres": ["fantasy", "mythology"],
-		"themes": ["heroism", "mythology", "good vs evil", "friendship", "journey"]
-	},
-	"haruki_murakami": {
-		"name": "Haruki Murakami",
-		"description": "Japanese novelist and translator. Major works include Norwegian Wood, Kafka on the Shore, 1Q84. Themes: loneliness, surrealism, love, memory, identity.",
-		"genres": ["novel", "magical realism"],
-		"themes": ["loneliness", "surrealism", "love", "memory", "identity"]
-	},
-	"john_steinbeck": {
-		"name": "John Steinbeck",
-		"description": "American novelist. Major works include The Grapes of Wrath, Of Mice and Men, East of Eden. Themes: poverty, family, justice, nature, society.",
-		"genres": ["novel", "historical fiction"],
-		"themes": ["poverty", "family", "justice", "nature", "society"]
-	},
-	"maya_angelou": {
-		"name": "Maya Angelou",
-		"description": "American poet, memoirist, and civil rights activist. Major works include I Know Why the Caged Bird Sings. Themes: identity, racism, resilience, family, freedom.",
-		"genres": ["poetry", "memoir"],
-		"themes": ["identity", "racism", "resilience", "family", "freedom"]
-	},
-	"j_d_salinger": {
-		"name": "J.D. Salinger",
-		"description": "American novelist and short story writer. Major works include The Catcher in the Rye, Nine Stories. Themes: alienation, innocence, youth, society, identity.",
-		"genres": ["novel", "short story"],
-		"themes": ["alienation", "innocence", "youth", "society", "identity"]
-	}
+  "gabriel_garcia_marquez": {
+    "name": "Gabriel García Márquez",
+    "description": "Colombian novelist, Nobel Prize winner, magical realism pioneer. Major works include One Hundred Years of Solitude, Love in the Time of Cholera. Themes: solitude, time, memory, Latin American identity, cyclical history, magical realism techniques.",
+    "genres": ["magical realism", "literary fiction"],
+    "themes": ["solitude", "time", "memory", "family sagas"]
+  },
+  "clarice_lispector": {
+    "name": "Clarice Lispector",
+    "description": "Brazilian novelist, modernist, existentialist. Known for introspective prose and exploration of the self. Major works include The Hour of the Star, The Passion According to G.H. Themes: identity, existence, the inner self.",
+    "genres": ["modernism", "existentialism"],
+    "themes": ["identity", "existence", "the inner self"]
+  },
+  "edouard_glissant": {
+    "name": "Édouard Glissant",
+    "description": "Martinican poet, novelist, and essayist. Major works include The Poetics of Relation, and The Overcoming of History. Themes: identity, history, and the Caribbean experience.",
+    "genres": ["postcolonialism", "magical realism"],
+    "themes": ["identity", "history", "the Caribbean experience", "colonialism"]
+  },
+  "alejandra_pizarnik": {
+    "name": "Alejandra Pizarnik",
+    "description": "Argentinian poet and writer known for her intense and lyrical poetry. Major works include Works and Nights and Extracting the Stone of Madness. Themes: solitude, existentialism, the search for identity.",
+    "genres": ["poetry", "existentialism"],
+    "themes": ["solitude", "existentialism", "identity"]
+  },
+  "jorge_luis_borges": {
+    "name": "Jorge Luis Borges",
+    "description": "Argentinian writer, poet, and essayist. Known for his intricate short stories and philosophical themes. Major works include Ficciones, Labyrinths, and The Aleph. Themes: infinity, labyrinths, identity, reality.",
+    "genres": ["fantasy", "philosophical fiction"],
+    "themes": ["infinity", "labyrinths", "identity", "reality"]
+  },
+  "anne_carson": {
+    "name": "Anne Carson",
+    "description": "Canadian poet, essayist, and translator. Known for her innovative and genre-defying works. Major works include Autobiography of Red and The Beauty of the Husband. Themes: love, loss, mythology, the nature of art.",
+    "genres": ["poetry", "essay"],
+    "themes": ["love", "loss", "mythology", "the nature of art"]
+  },
+  "roberto_bolano": {
+    "name": "Roberto Bolaño",
+    "description": "Chilean novelist, poet, and essayist. Known for his complex narratives and exploration of the human condition. Major works include The Savage Detectives and 2666. Themes: violence, memory, the search for meaning.",
+    "genres": ["novel", "poetry"],
+    "themes": ["violence", "memory", "poetry"]
+  },
+  "maryse_conde": {
+    "name": "Maryse Condé",
+    "description": "Guadeloupean author known for her novels and essays exploring the complexities of Caribbean identity and history. Major works include Windward Heights and The Story of the Cannibal Woman. Themes: identity, colonialism, feminism.",
+    "genres": ["postcolonialism", "feminism"],
+    "themes": ["identity", "colonialism", "feminism"]
+  },
+  "marcel_schwob": {
+    "name": "Marcel Schwob",
+    "description": "French symbolist writer known for his short stories and innovative narrative techniques. Major works include The Book of Monelle and Imaginary Lives. Themes: identity, transformation, the uncanny.",
+    "genres": ["symbolism", "fantasy"],
+    "themes": ["identity", "transformation", "the uncanny"]
+  },
+  "toni_morrison": {
+    "name": "Toni Morrison",
+    "description": "American novelist, Nobel Prize winner. Major works include Beloved, Song of Solomon. Themes: African-American identity, history, racism.",
+    "genres": ["literary fiction", "historical fiction"],
+    "themes": ["African-American identity", "history", "racism"]
+  },
+  "chimamanda_ngozi_adichie": {
+    "name": "Chimamanda Ngozi Adichie",
+    "description": "Nigerian novelist and feminist. Major works include Purple Hibiscus, Half of a Yellow Sun. Themes: colonialism, feminism, cultural identity.",
+    "genres": ["literary fiction", "feminism"],
+    "themes": ["colonialism", "feminism", "cultural identity"]
+  },
+  "salman_rushdie": {
+    "name": "Salman Rushdie",
+    "description": "British-Indian novelist. Major works include Midnight's Children, The Satanic Verses. Themes: post-colonialism, migration, hybrid identity.",
+    "genres": ["magical realism", "satire"],
+    "themes": ["post-colonialism", "migration", "hybrid identity"]
+  },
+  "margaret_atwood": {
+    "name": "Margaret Atwood",
+    "description": "Canadian novelist and poet. Major works include The Handmaid's Tale, Oryx and Crake. Themes: feminism, dystopia, environmentalism.",
+    "genres": ["speculative fiction", "dystopian fiction"],
+    "themes": ["feminism", "dystopia", "environmentalism"]
+  },
+  "arundhati_roy": {
+    "name": "Arundhati Roy",
+    "description": "Indian author and activist. Major works include The God of Small Things. Themes: caste system, post-colonialism, political activism.",
+    "genres": ["literary fiction"],
+    "themes": ["caste system", "post-colonialism", "political activism"]
+  },
+  "yukio_mishima": {
+    "name": "Yukio Mishima",
+    "description": "Japanese novelist, poet, playwright. Major works include The Temple of the Golden Pavilion, Confessions of a Mask. Themes: beauty, death, traditionalism vs modernity.",
+    "genres": ["modernism", "dramatic fiction"],
+    "themes": ["beauty", "death", "traditionalism vs modernity"]
+  },
+  "isabel_allende": {
+    "name": "Isabel Allende",
+    "description": "Chilean novelist. Major works include The House of the Spirits, Eva Luna. Themes: magical realism, family sagas, political turmoil.",
+    "genres": ["magical realism", "historical fiction"],
+    "themes": ["magical realism", "family sagas", "political turmoil"]
+  },
+  "assia_djebar": {
+    "name": "Assia Djebar",
+    "description": "Algerian novelist and historian. Major works include Fantasia: An Algerian Cavalcade, Women of Algiers in Their Apartment. Themes: feminism, colonialism, Algerian history.",
+    "genres": ["historical fiction", "autobiographical fiction"],
+    "themes": ["feminism", "colonialism", "Algerian history"]
+  },
+  "kazuo_ishiguro": {
+    "name": "Kazuo Ishiguro",
+    "description": "British novelist of Japanese origin. Major works include The Remains of the Day, Never Let Me Go. Themes: memory, identity, historical amnesia.",
+    "genres": ["literary fiction", "historical fiction"],
+    "themes": ["memory", "identity", "historical amnesia"]
+  },
+  "zadie_smith": {
+    "name": "Zadie Smith",
+    "description": "British novelist. Major works include White Teeth, NW. Themes: multiculturalism, identity, urban life.",
+    "genres": ["literary fiction"],
+    "themes": ["multiculturalism", "identity", "urban life"]
+  },
+  "orhan_pamuk": {
+    "name": "Orhan Pamuk",
+    "description": "Turkish novelist and Nobel Prize winner. Major works include My Name Is Red, Snow. Themes: East-West divide, identity, art and religion.",
+    "genres": ["historical fiction", "postmodernism"],
+    "themes": ["East-West divide", "identity", "art and religion"]
+  },
+  "gao_xingjian": {
+    "name": "Gao Xingjian",
+    "description": "Chinese-French novelist, playwright, critic, and Nobel Prize winner. Major works include Soul Mountain, One Man's Bible. Themes: existentialism, identity, exile.",
+    "genres": ["modernism", "existentialism"],
+    "themes": ["existentialism", "identity", "exile"]
+  },
+  "ocean_vuong": {
+    "name": "Ocean Vuong",
+    "description": "Vietnamese-American poet, essayist, and novelist. Major works include Night Sky with Exit Wounds, On Earth We're Briefly Gorgeous. Themes: immigration, identity, trauma.",
+    "genres": ["poetry", "literary fiction"],
+    "themes": ["immigration", "identity", "trauma"]
+  },
+  "ts_eliot": {
+    "name": "T.S. Eliot",
+    "description": "American-British poet, essayist, and playwright. Major works include The Waste Land, Four Quartets. Themes: modernism, time, spirituality.",
+    "genres": ["modernism", "poetry"],
+    "themes": ["modernism", "time", "spirituality"]
+  },
+  "william_shakespeare": {
+    "name": "William Shakespeare",
+    "description": "English playwright and poet. Major works include Hamlet, Romeo and Juliet, Macbeth. Themes: love, power, betrayal, fate, identity.",
+    "genres": ["drama", "poetry", "tragedy"],
+    "themes": ["love", "power", "betrayal", "fate", "identity"]
+  },
+  "leo_tolstoy": {
+    "name": "Leo Tolstoy",
+    "description": "Russian novelist and moral philosopher. Major works include War and Peace, Anna Karenina. Themes: morality, war, family, society, spirituality.",
+    "genres": ["novel", "historical fiction"],
+    "themes": ["morality", "war", "family", "society", "spirituality"]
+  },
+  "fyodor_dostoevsky": {
+    "name": "Fyodor Dostoevsky",
+    "description": "Russian novelist and philosopher. Major works include Crime and Punishment, The Brothers Karamazov. Themes: psychology, faith, guilt, redemption, existentialism.",
+    "genres": ["novel", "philosophical fiction"],
+    "themes": ["psychology", "faith", "guilt", "redemption", "existentialism"]
+  },
+  "jane_austen": {
+    "name": "Jane Austen",
+    "description": "English novelist. Major works include Pride and Prejudice, Emma, Sense and Sensibility. Themes: love, class, marriage, society, gender roles.",
+    "genres": ["novel", "romance"],
+    "themes": ["love", "class", "marriage", "society", "gender roles"]
+  },
+  "charles_dickens": {
+    "name": "Charles Dickens",
+    "description": "English novelist and social critic. Major works include Great Expectations, Oliver Twist, A Tale of Two Cities. Themes: poverty, justice, childhood, society, redemption.",
+    "genres": ["novel", "historical fiction"],
+    "themes": ["poverty", "justice", "childhood", "society", "redemption"]
+  },
+  "virginia_woolf": {
+    "name": "Virginia Woolf",
+    "description": "English modernist writer. Major works include Mrs Dalloway, To the Lighthouse, Orlando. Themes: time, consciousness, gender, identity, mental health.",
+    "genres": ["modernism", "novel"],
+    "themes": ["time", "consciousness", "gender", "identity", "mental health"]
+  },
+  "franz_kafka": {
+    "name": "Franz Kafka",
+    "description": "Czech novelist and short story writer. Major works include The Metamorphosis, The Trial, The Castle. Themes: alienation, bureaucracy, absurdity, identity, existentialism.",
+    "genres": ["novel", "short story", "existentialism"],
+    "themes": [
+      "alienation",
+      "bureaucracy",
+      "absurdity",
+      "identity",
+      "existentialism"
+    ]
+  },
+  "emily_dickinson": {
+    "name": "Emily Dickinson",
+    "description": "American poet. Major works include Because I could not stop for Death, I heard a Fly buzz—when I died. Themes: death, nature, love, isolation, immortality.",
+    "genres": ["poetry"],
+    "themes": ["death", "nature", "love", "isolation", "immortality"]
+  },
+  "homer": {
+    "name": "Homer",
+    "description": "Ancient Greek epic poet. Major works include The Iliad, The Odyssey. Themes: heroism, fate, war, journey, honor.",
+    "genres": ["epic poetry", "mythology"],
+    "themes": ["heroism", "fate", "war", "journey", "honor"]
+  },
+  "dante_alighieri": {
+    "name": "Dante Alighieri",
+    "description": "Italian poet. Major works include The Divine Comedy. Themes: sin, redemption, love, faith, journey.",
+    "genres": ["poetry", "allegory"],
+    "themes": ["sin", "redemption", "love", "faith", "journey"]
+  },
+  "george_orwell": {
+    "name": "George Orwell",
+    "description": "English novelist, essayist, and critic. Major works include 1984, Animal Farm. Themes: totalitarianism, freedom, truth, power, dystopia.",
+    "genres": ["dystopian fiction", "political fiction"],
+    "themes": ["totalitarianism", "freedom", "truth", "power", "dystopia"]
+  },
+  "h_g_wells": {
+    "name": "H.G. Wells",
+    "description": "English writer. Major works include The War of the Worlds, The Time Machine, The Invisible Man. Themes: science, future, society, evolution, ethics.",
+    "genres": ["science fiction", "novel"],
+    "themes": ["science", "future", "society", "evolution", "ethics"]
+  },
+  "oscar_wilde": {
+    "name": "Oscar Wilde",
+    "description": "Irish playwright, poet, and novelist. Major works include The Picture of Dorian Gray, The Importance of Being Earnest. Themes: beauty, art, morality, society, wit.",
+    "genres": ["drama", "novel", "poetry"],
+    "themes": ["beauty", "art", "morality", "society", "wit"]
+  },
+  "ernest_hemingway": {
+    "name": "Ernest Hemingway",
+    "description": "American novelist and short story writer. Major works include The Old Man and the Sea, A Farewell to Arms, For Whom the Bell Tolls. Themes: courage, war, loss, masculinity, nature.",
+    "genres": ["novel", "short story"],
+    "themes": ["courage", "war", "loss", "masculinity", "nature"]
+  },
+  "mark_twain": {
+    "name": "Mark Twain",
+    "description": "American novelist and humorist. Major works include Adventures of Huckleberry Finn, The Adventures of Tom Sawyer. Themes: childhood, freedom, race, society, adventure.",
+    "genres": ["novel", "humor", "adventure"],
+    "themes": ["childhood", "freedom", "race", "society", "adventure"]
+  },
+  "james_joyce": {
+    "name": "James Joyce",
+    "description": "Irish novelist and poet. Major works include Ulysses, Dubliners, A Portrait of the Artist as a Young Man. Themes: identity, time, consciousness, exile, language.",
+    "genres": ["modernism", "novel"],
+    "themes": ["identity", "time", "consciousness", "exile", "language"]
+  },
+  "marcel_proust": {
+    "name": "Marcel Proust",
+    "description": "French novelist. Major works include In Search of Lost Time. Themes: memory, time, love, society, art.",
+    "genres": ["novel", "modernism"],
+    "themes": ["memory", "time", "love", "society", "art"]
+  },
+  "j_r_r_tolkien": {
+    "name": "J.R.R. Tolkien",
+    "description": "English writer, philologist, and academic. Major works include The Lord of the Rings, The Hobbit, The Silmarillion. Themes: heroism, mythology, good vs evil, friendship, journey.",
+    "genres": ["fantasy", "mythology"],
+    "themes": ["heroism", "mythology", "good vs evil", "friendship", "journey"]
+  },
+  "haruki_murakami": {
+    "name": "Haruki Murakami",
+    "description": "Japanese novelist and translator. Major works include Norwegian Wood, Kafka on the Shore, 1Q84. Themes: loneliness, surrealism, love, memory, identity.",
+    "genres": ["novel", "magical realism"],
+    "themes": ["loneliness", "surrealism", "love", "memory", "identity"]
+  },
+  "john_steinbeck": {
+    "name": "John Steinbeck",
+    "description": "American novelist. Major works include The Grapes of Wrath, Of Mice and Men, East of Eden. Themes: poverty, family, justice, nature, society.",
+    "genres": ["novel", "historical fiction"],
+    "themes": ["poverty", "family", "justice", "nature", "society"]
+  },
+  "maya_angelou": {
+    "name": "Maya Angelou",
+    "description": "American poet, memoirist, and civil rights activist. Major works include I Know Why the Caged Bird Sings. Themes: identity, racism, resilience, family, freedom.",
+    "genres": ["poetry", "memoir"],
+    "themes": ["identity", "racism", "resilience", "family", "freedom"]
+  },
+  "j_d_salinger": {
+    "name": "J.D. Salinger",
+    "description": "American novelist and short story writer. Major works include The Catcher in the Rye, Nine Stories. Themes: alienation, innocence, youth, society, identity.",
+    "genres": ["novel", "short story"],
+    "themes": ["alienation", "innocence", "youth", "society", "identity"]
+  }
 }

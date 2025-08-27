@@ -1,34 +1,36 @@
 {
-	"name": "infinite-library",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"generate-embeddings": "npx tsx app/scripts/generate-embeddings.ts"
-	},
-	"dependencies": {
-		"@huggingface/inference": "^4.7.1",
-		"d3": "^7.9.0",
-		"dotenv": "^17.2.1",
-		"next": "15.4.6",
-		"react": "19.1.0",
-		"react-dom": "19.1.0"
-	},
-	"devDependencies": {
-		"@eslint/eslintrc": "^3",
-		"@tailwindcss/postcss": "^4",
-		"@types/d3": "^7.4.3",
-		"@types/node": "^20",
-		"@types/react": "^19",
-		"@types/react-dom": "^19",
-		"eslint": "^9",
-		"eslint-config-next": "15.4.6",
-		"tailwindcss": "^4",
-		"ts-node": "^10.9.2",
-		"tsx": "^4.20.4",
-		"typescript": "^5"
-	}
+  "name": "infinite-library",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-embeddings": "npx tsx app/scripts/generate-embeddings.ts"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^4.7.1",
+    "d3": "^7.9.0",
+    "dotenv": "^17.2.1",
+    "next": "15.4.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/d3": "^7.4.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.4",
+    "typescript": "^5"
+  }
 }

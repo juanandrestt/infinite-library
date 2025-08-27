@@ -1,9 +1,10 @@
 export default function Header() {
-	return (
-		<header className='relative flex justify-center items-center'>
-			<h1 className='absolute top-6 text-4xl font-bold'>
-				The Infinite Library
-			</h1>
-		</header>
-	);
+  return (
+    <header
+      className="absolute top-36 left-1/2 z-10 -translate-x-1/2 border border-black px-6 py-4"
+      style={{ background: "var(--background)" }}
+    >
+      <h1 className="text-4xl font-bold">The Infinite Library</h1>
+    </header>
+  );
 }
