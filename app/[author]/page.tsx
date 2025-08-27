@@ -109,8 +109,8 @@ export default function AuthorPage() {
   return (
     <div className="relative h-screen w-screen">
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer font-bold"
-        onClick={() => router.push(`/${data.centralAuthor.id}`)}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-default font-bold"
+        aria-label={`Author: ${data.centralAuthor.name}`}
       >
         {data.centralAuthor.name}
       </div>

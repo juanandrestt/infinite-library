@@ -24,6 +24,7 @@ const AuthorNode: React.FC<AuthorNodeProps> = ({
       fontWeight: isCentral ? "bold" : "normal",
     }}
     onClick={() => onClick?.(author.id)}
+    aria-label={`Author: ${author.name}`}
   >
     {author.name}
   </div>
